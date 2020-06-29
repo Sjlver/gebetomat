@@ -11,7 +11,9 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/milligram.min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -20,17 +22,23 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <h1>Gebet-o-Mat</h1>
+  <div class="container">
+    <h1>Gebet-o-Mat</h1>
 
-  <h2>Kreiere dein Gebet</h2>
+    <h2>Kreiere dein Gebet</h2>
 
-  <p id="gebet-anrede">Lieber Gott</p>
-  <p id="gebet-intro">Ich möchte dir sagen, dass …</p>
-  <p id="gebet-frage">Wer bist du?</p>
-  <p id="gebet-bitte">Bleibe bei mir.</p>
-  <p id="gebet-ende">Amen.</p>
+    <div class="row">
+      <div class="column">
+        <p id="gebet-anrede">Lieber Gott</p>
+        <p id="gebet-intro">Ich möchte dir sagen, dass …</p>
+        <p id="gebet-frage">Wer bist du?</p>
+        <p id="gebet-bitte">Bleibe bei mir.</p>
+        <p id="gebet-ende">Amen.</p>
+      </div>
+    </div>
 
-  <button id="gebet-random">Zufälliges Gebet</button>
+    <button id="gebet-random">Zufälliges Gebet</button>
+  </div>
 
   <!-- Scripts start below this line -->
   <script src="js/main.js"></script>
