@@ -45,10 +45,15 @@ function replacePart(part) {
   paragraph.textContent = options[choice];
 }
 
+function cyclePart(part) {
+  const paragraph = document.getElementById(`gebet-${part}`);
+  const options = kGebete.get(part);
+  const current = options.findIndex((t) => t === paragraph.textContent);
+  paragraph.textContent = options[(current + 1) % options.length];
+}
+
 const gebetRandom = document.getElementById('gebet-random');
 gebetRandom.addEventListener('click', (event) => {
-  console.log('gebetRandom');
-
   for (const part of ['anrede', 'intro', 'frage', 'bitte', 'ende']) {
     replacePart(part);
   }
@@ -56,6 +61,6 @@ gebetRandom.addEventListener('click', (event) => {
 
 for (const part of ['anrede', 'intro', 'frage', 'bitte', 'ende']) {
   document.getElementById(`gebet-${part}`).addEventListener('click', (event) => {
-    replacePart(part);
+    cyclePart(part);
   });
 }
