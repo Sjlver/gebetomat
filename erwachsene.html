@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gebet-o-Mat</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/milligram.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script>
+const kGebete = new Map([
+  ['anrede', [
+    'Lieber Gott,',
+    'Gott, du mein Freund und meine Freundin,',
+    'Unser Vater / Unsere Mutter,',
+    'Du …',
+    'Jesus …',
+    'Rätselhafter Gott,',
+    'Grosser Gott,',
+  ]],
+  ['intro', [
+    'Ich möchte dir sagen, dass …',
+    'Ich freue mich, denn …',
+    'Ich danke dir, dass …',
+    'Heute war der Tag schwierig, weil …',
+    'Ich bitte dich für …',
+    'Ich frage mich, ob …',
+    'Ich lobe dich …',
+    '',
+  ]],
+  ['frage', [
+    'Wer bist du?',
+    'Wie finde ich dich?',
+    'Bist du im Himmel? Bist du hier bei mir? Bist du überall?',
+    'Ich weiss, ich kann dich nicht sehen, doch ich glaube, du bist da …',
+    '',
+  ]],
+  ['bitte', [
+    'Bleibe bei mir.',
+    'Behüte und tröste mich.',
+    'Wache über mir.',
+    'Lass mich nicht allein.',
+    'Sorge du.',
+    'Dir vertraue ich.',
+    'Du machst es schon recht.',
+    '',
+  ]],
+  ['ende', [
+    'Amen.',
+    'So sei es.',
+  ]],
+]);
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div class="container">
+    <h2>Kreiere dein Gebet</h2>
+
+    <div class="row">
+      <div class="column">
+        <p id="gebet-anrede">Lieber Gott,</p>
+        <p id="gebet-intro">Ich möchte dir sagen, dass …</p>
+        <p id="gebet-frage">Wer bist du?</p>
+        <p id="gebet-bitte">Bleibe bei mir.</p>
+        <p id="gebet-ende">Amen.</p>
+      </div>
+    </div>
+
+    <button id="gebet-random">Zufälliges Gebet</button>
+  </div>
+
+  <!-- Scripts start below this line -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
