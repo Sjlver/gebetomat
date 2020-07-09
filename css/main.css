@@ -5,3 +5,7 @@ html {
 .gebet p {
   margin-bottom: 1rem;
 }
+
+.gebet.erwachsene p {
+  font-size: 1.2rem;
+}
