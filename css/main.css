@@ -2,10 +2,58 @@ html {
   font-size: 1em;
 }
 
+body {
+  background-image: url('../img/mona-eendra-flowers-beside-yellow-wall.jpg');
+  background-position: bottom center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 40.0rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container > .row {
+  background: #ffffff77;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
 .gebet p {
   margin-bottom: 1rem;
 }
 
+.gebet button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .gebet.erwachsene p {
   font-size: 1.2rem;
+}
+
+.impressum .column {
+  margin-bottom: 0;
+}
+
+.impressum p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer .column {
+  font-size: 1.0rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* For small screens, reduce button padding so that buttons don't overflow the width. */
+@media (max-width: 40.0rem) {
+  .button, button, input[type='button'], input[type='reset'], input[type='submit'] {
+    padding: 0 1.0rem;
+  }
 }
