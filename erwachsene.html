@@ -23,6 +23,7 @@
 const kGebete = new Map([
   ['z1', [
     'Unser Vater im Himmel,',
+    'Vater unser im Himmel,',
     'Gott, mein Freund und meine Freundin,',
     'Du,',
     'Du Rätsel aller Rätsel,',
@@ -83,10 +84,10 @@ const kGebete = new Map([
 
   <!-- Add your site or application content here -->
   <div class="container">
-    <h2>Dein Gebet</h2>
-
     <div class="row">
       <div class="column gebet erwachsene">
+        <h2>Dein Gebet</h2>
+
         <p id="gebet-z1">Unser Vater im Himmel,</p>
         <p id="gebet-z2">Geheiligt werde dein Name.</p>
         <p id="gebet-z3">Dein Reich komme, dein Wille geschehe wie im Himmel so auf Erden.</p>
@@ -95,10 +96,19 @@ const kGebete = new Map([
         <p id="gebet-z6">Und führe uns nicht in Versuchung, sondern erlöse uns von dem Bösen.</p>
         <p id="gebet-z7">Denn dein ist das Reich und die Kraft und die Herrlichkeit in Ewigkeit.</p>
         <p id="gebet-z8">Amen!</p>
+
+        <button id="gebet-random"><i class="fas fa-random"></i> Gebet</button>
       </div>
     </div>
 
-    <button id="gebet-random">Zufälliges Gebet</button>
+    <div class="row footer">
+      <div class="column">
+        <a href="../">Gebet-o-Mat</a>
+      </div>
+      <div class="column">
+        <a href="../impressum.html">Impressum</a>
+      </div>
+    </div>
   </div>
 
   <!-- Scripts start below this line -->

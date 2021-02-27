@@ -27,6 +27,7 @@ gebetRandom.addEventListener('click', (event) => {
   for (const part of kGebete.keys()) {
     replacePart(part);
   }
+  setTimeout(() => gebetRandom.blur(), 800);
 });
 
 for (const part of kGebete.keys()) {
