@@ -7,6 +7,10 @@ body {
   background-position: bottom center;
   min-height: 100vh;
   padding: 1rem;
+
+  /* Make color a bit darker than Milligram's default, due to our high-contrast
+   * background image. */
+  color: #3e454c;
 }
 
 .container {
