@@ -78,6 +78,8 @@ const kGebete = new Map([
     'So sei es!',
   ]],
 ]);
+
+document.addEventListener('DOMContentLoaded', () => tutorial('anrede'));
   </script>
 
 </head>
@@ -111,6 +113,8 @@ const kGebete = new Map([
       </div>
     </div>
   </div>
+
+  <i id="tutorial" class="fas fa-hand-pointer" style="position: fixed; display: none;"></i>
 
   <!-- Scripts start below this line -->
   <script src="js/vendor/velocity.min.js"></script>
